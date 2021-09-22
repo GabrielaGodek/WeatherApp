@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+    font-size: 12px;
+}
+.app {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #1a263d;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    .fa-map-marked-alt {
+        margin: 15px 0 0 10px;
+    }
+
+    h1 {
+        padding: 5px 0;
+        text-align: center;
+        font-size: 2em;
+        border-bottom: 1px solid white;
+    }
+    .place {
+        text-align: center;
+        font-size: 3.5em;
+        text-transform: uppercase;
+    }
+    img {
+        height: 30vh;
+        width: 30vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .temp {
+        text-align: center;
+        font-size: 6.5em;
+        color: white;
+    }
+    .about {
+        .border {
+            border-top: 1px solid white;
+            padding-top: 20px;
+        }
+        .specific {
+            text-align: center;
+            .spac-windy {
+                font-size: 2em;
+            }
+            .windy {
+                font-size: 2em;
+            }
+            .spac-min-max {
+                font-size: 2em;
+            }
+            .min-max {
+                font-size: 2em;
+            }
+            .min {
+                font-size: 1em;
+            }
+            .max {
+                font-size: 1em;
+            }
+            .spac-clouds {
+                font-size: 2em;
+            }
+            .clouds {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .popUp {
+        display: block;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        transition: transform 0.3s;
+        color: black;
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        padding: 5vh 0 5vh;
+        border: 1px solid black;
+        border-radius: 20px;
+        color: black;
+        h2 {
+            color: black;
+            text-transform: uppercase;
+        }
+        .change-city {
+            color: black;
+            border-radius: 10px;
+            padding: 2px 15px;
+            background-color: #2e3a52;
+            color: white;
+        }
+        input {
+            color: black;
+        }
+        .error-info {
+            display: block;
+            color: red;
+        }
+    }
+    .fa-map-marked-alt:hover {
+        cursor: pointer;
+    }
+}
+
+//mobile
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .app {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+        .popUp {
+            width: 100%;
+            left: 0;
+        }
+    }
+}

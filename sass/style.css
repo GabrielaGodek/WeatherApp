@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: white;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+  font-size: 12px;
+}
+
+.app {
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #1a263d;
+  -webkit-box-shadow: 8px 8px 24px 0px #42445a;
+  -moz-box-shadow: 8px 8px 24px 0px #42445a;
+  box-shadow: 8px 8px 24px 0px #42445a;
+}
+
+.app .fa-map-marked-alt {
+  margin: 15px 0 0 10px;
+}
+
+.app h1 {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 1px solid white;
+}
+
+.app .place {
+  text-align: center;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+.app img {
+  height: 30vh;
+  width: 30vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app .temp {
+  text-align: center;
+  font-size: 6.5em;
+  color: white;
+}
+
+.app .about .border {
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.app .about .specific {
+  text-align: center;
+}
+
+.app .about .specific .spac-windy {
+  font-size: 2em;
+}
+
+.app .about .specific .windy {
+  font-size: 2em;
+}
+
+.app .about .specific .spac-min-max {
+  font-size: 2em;
+}
+
+.app .about .specific .min-max {
+  font-size: 2em;
+}
+
+.app .about .specific .min {
+  font-size: 1em;
+}
+
+.app .about .specific .max {
+  font-size: 1em;
+}
+
+.app .about .specific .spac-clouds {
+  font-size: 2em;
+}
+
+.app .about .specific .clouds {
+  font-size: 2em;
+}
+
+.app .popUp {
+  display: block;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transition: transform 0.3s;
+  color: black;
+  width: 80%;
+  position: absolute;
+  text-align: center;
+  padding: 5vh 0 5vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
+}
+
+.app .popUp h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.app .popUp .change-city {
+  color: black;
+  border-radius: 10px;
+  padding: 2px 15px;
+  background-color: #2e3a52;
+  color: white;
+}
+
+.app .popUp input {
+  color: black;
+}
+
+.app .popUp .error-info {
+  display: block;
+  color: red;
+}
+
+.app .fa-map-marked-alt:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+  .app .popUp {
+    width: 100%;
+    left: 0;
+  }
+}
