@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="app position-relative">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class=" col">WeatherApp</h1>
+            </div>
+                <div class="row">
+                    <div class="col-2 fas fa-map-marked-alt fa-2x"></div>
+                    <div class="col-8 place"></div>
+                    <div class="col-2"></div>
+                </div>
+        </div>
+
+            <div class="container-fluid">
+                <div class="row justify-content-sm-center">
+                    <img src="" alt="Weather Image" class="ddd">
+                </div>
+                <div class="row justify-content-md-center">
+                        <div class=" col temp"><span class="celsius">&#8451;</span></div>
+                </div>
+            </div>
+           
+                    <div class="about container-fluid">
+                        <!-- <div class="row">
+                            <div class="offset-3 space col-6"></div>
+                        </div> -->
+                        <div class="specific row">
+                            <!-- Wind -->
+                            <div class=" position-absolute bottom-0 start-0">
+                                <p class="col-3 spac-windy">Wind</p>
+                                <p class="col-3 windy "></p>
+                            </div>
+                            <!-- Temperature -->
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x border">
+                                <p class="col spac-min-max">Temperature <br>min / max</p>
+                                <p class="col min-max "><span class="min"></span> / <span class="max"></span></p>
+                            </div>
+                            <!-- Clouds -->
+                            <div class=" position-absolute bottom-0 end-0">
+                                <p class="offset-9 col-3 spac-clouds">Clouds</p>
+                                <p class="offset-9 col-3 clouds " ></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+    <div class="popUp">
+        <h2>Change city</h2>
+        <input type="text" placeholder="enter city" id="city">
+        <label for="city" class="error-info"></label>
+        <button class="change-city">Change</button>
+    </div>
+          
+</div>
+
+    <script src="https://kit.fontawesome.com/13beb52b81.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
